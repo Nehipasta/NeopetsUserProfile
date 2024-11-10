@@ -5,22 +5,18 @@
  * ask before copying (if I don't respond in a week, feel free) 
  * will sell a color shifted blue and green if interested for NC items
  *
- * I have over 500 free characters after putting this through https://www.toptal.com/developers/cssminifier
- * there's prob a bit more polish I could do to remove superfluous lines and free up another 100 characters or so,
- * but I think this is good for now
+ * I have over 500 free characters for the text of my profile 
+ * after putting this through https://www.toptal.com/developers/cssminifier,
+ * and allowing Neopets to reformat it.
  **/
 
-
-body {
-	background-color: #040000;
-}
 
 
 TD {
 	font-family: "Courier New", Courier, monospace, serif !important;
 }
 
-#main {
+body, #main {
 	width: 100%;
 	border: 0px;
 	background: #080000;
@@ -50,7 +46,7 @@ TD {
 
 ul.dropdown {
 	border: 1px solid #611;
-	background-color: #FAA;
+	background: #FAA;
 	border-radius: 1px;
 	font-size: 9pt !important;
 }
@@ -132,7 +128,6 @@ ul.dropdown {
 /** CONTENT **/
 
 #content {
-	background: #080000;
 	color: #fdd;
 	width: 100%;
 	margin-top: 60px;
@@ -164,7 +159,7 @@ p {
 	border: 2px solid #300;
 }
 .contentModuleContent {
-	background-color: #100;
+	background: #100;
 }
 .contentModuleTable {
 	border: 2px solid #511;
