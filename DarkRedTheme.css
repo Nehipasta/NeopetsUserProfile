@@ -184,11 +184,12 @@ p {
 }
 /* link */
 .contentModule a, .contentModule a b {
-	color: #fee;
+	color: #fdd;
 	font-size: 16px;
+	font-style: italic;
 }
 .contentModule a:hover, .contentModule a b:hover {
-	color: #fcc;
+	color: #fbb;
 }
 /* img */
 .contentModuleContent img {
