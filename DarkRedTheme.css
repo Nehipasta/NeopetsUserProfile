@@ -1,0 +1,326 @@
+/** 
+ * Neopets Format Red
+ * created by sophie (https://www.neopets.com/userlookup.phtml?user=fujophie)
+ *
+ * ask before copying (if I don't respond in a week, feel free) 
+ * will sell a color shifted blue and green if interested for NC items
+ *
+ * I have over 500 free characters after putting this through https://www.toptal.com/developers/cssminifier
+ * there's prob a bit more polish I could do to remove superfluous lines and free up another 100 characters or so,
+ * but I think this is good for now
+ **/
+
+
+body {
+	background-color: #040000;
+}
+
+
+TD {
+	font-family: "Courier New", Courier, monospace, serif !important;
+}
+
+#main {
+	width: 100%;
+	border: 0px;
+	background: #080000;
+}
+
+
+/* This is for scrolling the neopets */
+.bx-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 575px !important;
+}
+.bx-viewport {
+	height: 272px !important;
+}
+.bx-controls {
+	display: none;
+}
+
+/* Hide the footer */
+#layer2 + div, #footer {
+	display: none;
+}
+
+
+/** HEADER **/
+
+ul.dropdown {
+	border: 1px solid #611;
+	background-color: #FAA;
+	border-radius: 1px;
+	font-size: 9pt !important;
+}
+#header {
+	position: fixed;
+	/* since we cut the arrows that have index of 9999, we can reduce this number to marginally save on characters */
+	z-index: 1; 
+	background: transparent;
+}
+
+/** Neopets Logo **/
+#header > table >tbody>tr>td>a>img {
+	position: fixed;
+	top: 6px;
+	left: 12px;
+	background: url("http://i.imgur.com/hvOZTsI.png");
+	height: 28px;
+	width: 28px;
+	/* since we cut the arrows that have index of 9999, we can reduce this number to marginally save on characters */
+	z-index: 2; 
+}
+
+/** Ban **/
+#ban {
+	background: transparent;
+}
+
+/** Navigation **/
+
+#navigation {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border-bottom: 1px solid #e88;
+	border-right: 1px solid #e88;
+	padding-left: 40px;
+	border-radius: 0 0 4px 0;
+	background: #fcc;
+	width: 725px !important;
+}
+
+/** User Header **/
+
+.user {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 4px 12px 0 16px;
+	height: 20px !important;
+	border-bottom: 1px solid #e88;
+	border-left: 1px solid #e88;
+	border-radius: 0 0 0 4px;
+	background: #fcc;
+	/* since we cut the arrows that have index of 9999, we can reduce this number to marginally save on characters */
+	z-index: 2;
+}
+.user a, .user a:visited, .user a:link {
+	color: #d55;
+}
+.user a:hover {
+	color: #a55;
+}
+
+/* Time */
+#navigation >table>tbody>tr>td+td {
+	position: fixed;
+	bottom: 0px;
+	right: 16px;
+	border-color: #e88;
+	border-style: solid;
+	border-width: 1px 1px 0 1px;
+	border-radius: 4px 4px 0 0;
+	padding: 4px;
+	background: #fcc;
+	font-size: 11px !important;
+}
+
+
+/** CONTENT **/
+
+#content {
+	background: #080000;
+	color: #fdd;
+	width: 100%;
+	margin-top: 60px;
+}
+
+.medText hr {
+	color: #422;
+    margin: 12px 0 12px 0;
+}
+
+.medText {
+	font-size: 14px;
+}
+
+/* Custom profile */
+h1 {
+	color: #fee;
+	font-size: 36px;
+}
+
+p {
+	color: #eaa;
+	font-size: 16px;
+}
+
+/* Content Modules */
+
+.contentModule {
+	border: 2px solid #300;
+}
+.contentModuleContent {
+	background-color: #100;
+}
+.contentModuleTable {
+	border: 2px solid #511;
+}
+.contentModule tr + tr {
+	color: #ebb;
+}
+.contentModuleHeaderAlt, .contentModuleHeader {
+	background: #200;
+	color: #fdd;
+	padding-left: 8px;
+	font-size: 16px;
+}
+.contentModuleContent b {
+	font-size: 15px;
+	color: #e88;
+}
+/* link */
+.contentModule a, .contentModule a b {
+	color: #fee;
+	font-size: 16px;
+}
+.contentModule a:hover, .contentModule a b:hover {
+	color: #fcc;
+}
+/* img */
+.contentModuleContent img {
+	border-radius: 8px;
+	margin-bottom: 4px;
+	border: 2px solid #422;
+}
+.contentModuleContent a img {
+	border: 3px solid #422;
+}
+.contentModuleContent a img:hover {
+	border: 3px solid #544;
+}
+
+/* User info */
+#userinfo, #usercollections, #usershop {
+	height: 343px !important;
+}
+#userinfo .medText > br+ table {
+	border-top: 1px solid #422 !important;
+	padding-top: 8px;
+}
+#userinfo  .contentModuleContent, #usertrophies  .contentModuleContent {
+	padding: 8px;
+}
+/* gender color */
+#userinfo b+b {
+	color: #FF69B4 !important;
+}
+
+/* User shop */
+#usershop img {
+	margin: 10px;
+}
+
+/* User Neopets */
+#userneopets b {
+	font-size: 16px;
+	color: #fee;
+}
+#userneopets br + b {
+	font-size: 14px;
+	color: #e88;
+}
+#userneopets hr {
+	margin-top: -20px;
+}
+#userneopets a img {
+	border: 3px solid #211;
+}
+#userneopets a img:hover {
+	border: 3px solid #322;
+}
+
+/* NC Mall */
+#ncmall >br {
+	display: none;
+}
+
+
+/* User Collections */
+
+#usercollections tr + tr td {
+	background: #200;
+	color: #fdd;
+	font-size: 14px;
+}
+#usercollections .contentModuleHeaderAlt {
+	background: #100;
+	color: #ebb;
+}
+
+#usercollections a b, #usercollections b+ br + a + br + b {
+	display: inline;
+}
+#usercollections br + br + br + img + br + b + br + a + br + b, #usercollections a + br + b + b {
+	display: inline;
+	font-size: 15px;
+}
+#usercollections b {
+	display: none;
+}
+#usercollections td + td img {
+	display: none;
+}
+/* battledome image */
+#usercollections td + td b+br+br+ img {
+	display: inherit;
+	margin-top: 24px;
+}
+#usercollections .contentModuleContent table {
+	margin-top: 10px;
+}
+#usercollections td + td {
+	overflow: hidden;
+}
+#usercollections td + td a img {
+	margin: -70px;
+	display: block;
+}
+#usercollections img {
+	margin-bottom: -10px;
+	border: 2px solid #522;
+}
+#usercollections a img {
+	margin-bottom: -10px;
+	border: 3px solid #522;
+}
+#usercollections a img:hover {
+	margin-bottom: -10px;
+	border: 3px solid #644;
+}
+#usercollections td + td a img + br + b {
+	display: block;
+	margin: 10px;
+	font-size: 0px;
+}
+#usercollections td + td br + br + br + img + br + b + br + a {
+	display: inline-block;
+	width: 80px;
+	overflow: hidden;
+	margin-top: -30px;
+}
+#usercollections td + td br + br + br + img + br + b + br + a b {
+	height: 76px;
+	background-image: url("https://i.imgur.com/KSNUKPN.png");
+	display: block;
+	border-radius: 8px;
+	font-size: 0;
+	border: 3px solid #422;
+	margin-bottom: 6px;
+}
+#usercollections td + td br + br + br + img + br + b + br + a b:hover {
+	border: 3px solid #533;
+}
