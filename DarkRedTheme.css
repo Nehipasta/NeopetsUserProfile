@@ -22,6 +22,11 @@ body, #main {
 	background: #080000;
 }
 
+.randomEvent {
+	border-radius: 16px;
+	overflow: hidden;
+	color: black;
+}
 
 /* This is for scrolling the neopets */
 .bx-wrapper {
